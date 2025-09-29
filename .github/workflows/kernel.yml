@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       device:
-          description: 'device codename (RMX2020/cancunf/salaa)'
+          description: 'device codename (RMX2020/cancunf/salaa/nemo)'
           required: true
       repo:
           description: 'Kernel source link'
@@ -57,7 +57,7 @@ jobs:
               wget https://raw.githubusercontent.com/sarthakroy2002/Scripts/main/Kernel/cancunf_gki_build_script.sh
               bash cancunf_gki_build_script.sh
             else
-              wget https://raw.githubusercontent.com/sarthakroy2002/Scripts/main/Kernel/cancunf_build_script.sh
-              bash cancunf_build_script.sh
+              wget https://raw.githubusercontent.com/EvilAnsh/Scripts/main/Kernel/nemo_build_script.sh
+              bash nemo_build_script.sh
             fi
           fi
