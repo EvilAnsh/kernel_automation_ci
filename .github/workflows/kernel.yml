@@ -61,3 +61,9 @@ jobs:
               bash nemo_build_script.sh
             fi
           fi
+
+      - name: Setup tmate session for debugging
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
+        with:
+          sudo: true
